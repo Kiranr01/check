@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite PUBLIC "SYSTEM" "http://testng.org/testng-1.0.dtd">
+<suite name="SEG Roadrunner" parallel="tests" thread-count="1">
+    <test name="Fully_Enrolled_Customers_Flow__TestDataSheet_1__Chrome__Winndixie">
+        <parameter name="BrowserType" value="Chrome"/>
+        <parameter name="Banner" value="Winndixie"/>
+        <parameter name="node_ip" value="10.211.4.91:5555"/>
+        <parameter name="TestDataExcel" value="TestDataSheet_1"/>
+        <classes>
+            <class name="executableClass.Fully_Enrolled_Customers_Flow">
+                <methods>
+                    <include name="TC003_EnrollNewProgram_Phonenumber_VerifybyPII"/>
+                    <include name="TC006_EnrollinNewProgram_old_SEG_CRC_number_VerifybyPII"/>
+                    <include name="TC009_EnrollinNewProgram_PlentiCardNumber_VerifybyPII"/>
+                    <include name="TC012_EnrollinNewProgram_G_AND_G_cardNumber_VerifybyPII"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

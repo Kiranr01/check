@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite PUBLIC "SYSTEM" "http://testng.org/testng-1.0.dtd">
+<suite name="SEG Roadrunner" parallel="tests" thread-count="1">
+    <test name="Store_Locator__TestDataSheet_1__Chrome__Winndixie">
+        <parameter name="BrowserType" value="Chrome"/>
+        <parameter name="Banner" value="Winndixie"/>
+        <parameter name="node_ip" value="10.211.4.91:5555"/>
+        <parameter name="TestDataExcel" value="TestDataSheet_1"/>
+        <classes>
+            <class name="executableClass.Store_Locator">
+                <methods>
+                    <include name="TC_01_Store_Locator_Page"/>
+                    <include name="TC02_Store_Locator_Zipcode"/>
+                    <include name="TC_03_Store_Locator_ChangeLocation"/>
+                    <include name="TC_04_Store_Locator_City_And_State"/>
+                    <include name="TC_06_Search__invalid_Zip_code_More_than_5_digits"/>
+                    <include name="TC_08_Store_Locator_Page_logged_in"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite PUBLIC "SYSTEM" "http://testng.org/testng-1.0.dtd">
+<suite name="SEG Roadrunner" parallel="tests" thread-count="1">
+    <test name="Set_Pin_PW_in_Security_Info__TestDataSheet_1__Chrome__Winndixie">
+        <parameter name="BrowserType" value="Chrome"/>
+        <parameter name="Banner" value="Winndixie"/>
+        <parameter name="node_ip" value="10.211.4.91:5555"/>
+        <parameter name="TestDataExcel" value="TestDataSheet_1"/>
+        <classes>
+            <class name="executableClass.Set_Pin_PW_in_Security_Info">
+                <methods>
+                    <include name="TC001_FullyEnrolled_NavigateTo_PasswordSetScreen_WithCardNumber"/>
+                    <include name="TC003_FullyEnrolled_NavigateTo_NeverMissaDealPage_WithCardNumber"/>
+                    <include name="TC004_FullyEnrolled_NoPinNoPassword_WithCardNumber"/>
+                    <include name="TC005_FullyEnrolledUser_PasswordSetScreen"/>
+                    <include name="TC006_FullyEnrolledUser_PasswordSetScreen_ErrorMessageValidation"/>
+                    <include name="TC007_FullyEnrolled_ValidatePinScreen"/>
+                    <include name="TC008_FullyEnrolledUser_PinSetScreen_ErrorMessageValidation"/>
+                    <include name="TC011_FullyEnrolled_NavigateTo_PasswordSetScreen_WithPhoneNumber"/>
+                    <include name="TC013_PreEnrolled_NoPinNoPassword_WithCardNumber"/>
+                    <include name="TC014_PreEnrolled_NoPinNoPassword_WithPhoneNumber"/>
+                    <include name="TC015_FullyEnrolled_Check_T_And_C"/>
+                    <include name="TC016_PreEnrolled_Check_T_And_C"/>
+                    <include name="TC007_Validate_ErrorMessage_If_Character_As_A_PINnumber"/>
+                    <include name="TC013_Validate_the_blocked_list_of_email_domains_should_not_be_allowed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite PUBLIC "SYSTEM" "http://testng.org/testng-1.0.dtd">
+<suite name="SEG Roadrunner" parallel="tests" thread-count="1">
+    <test name="Updated_Homepage__TestDataSheet_1__Chrome__Winndixie">
+        <parameter name="BrowserType" value="Chrome"/>
+        <parameter name="Banner" value="Winndixie"/>
+        <parameter name="node_ip" value="10.211.4.91:5555"/>
+        <parameter name="TestDataExcel" value="TestDataSheet_1"/>
+        <classes>
+            <class name="executableClass.Updated_Homepage">
+                <methods>
+                    <include name="TC001_Home_page_for_Logged_out_user"/>
+                    <include name="TC002_Home_page_for_Soft_Login"/>
+                    <include name="TC003_Home_page_for_Hard_Login"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

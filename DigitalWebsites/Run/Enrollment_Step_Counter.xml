@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite PUBLIC "SYSTEM" "http://testng.org/testng-1.0.dtd">
+<suite name="SEG Roadrunner" parallel="tests" thread-count="1">
+    <test name="Enrollment_Step_Counter__TestDataSheet_1__Chrome__Winndixie">
+        <parameter name="BrowserType" value="Chrome"/>
+        <parameter name="Banner" value="Winndixie"/>
+        <parameter name="node_ip" value="10.211.4.91:5555"/>
+        <parameter name="TestDataExcel" value="TestDataSheet_1"/>
+        <classes>
+            <class name="executableClass.Enrollment_Step_Counter">
+                <methods>
+                    <include name="TC001_Enrollment_StepCounter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

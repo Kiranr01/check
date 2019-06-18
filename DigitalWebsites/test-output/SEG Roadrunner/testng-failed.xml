@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [SEG Roadrunner]" parallel="tests">
+  <parameter name="node_ip" value="10.211.4.91:5555"/>
+  <parameter name="BrowserType" value="Chrome"/>
+  <parameter name="Banner" value="Winndixie"/>
+  <parameter name="TestDataExcel" value="TestDataSheet_1"/>
+  <test name="Shopping_List__TestDataSheet_1__Chrome__Winndixie(failed)" parallel="tests">
+    <parameter name="node_ip" value="10.211.4.91:5555"/>
+    <parameter name="BrowserType" value="Chrome"/>
+    <parameter name="Banner" value="Winndixie"/>
+    <parameter name="TestDataExcel" value="TestDataSheet_1"/>
+    <classes>
+      <class name="executableClass.Shopping_List">
+        <methods>
+          <include name="TC_09_ShoppingList_Delete_Circular_Items" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- executableClass.Shopping_List -->
+    </classes>
+  </test> <!-- Shopping_List__TestDataSheet_1__Chrome__Winndixie(failed) -->
+</suite> <!-- Failed suite [SEG Roadrunner] -->
